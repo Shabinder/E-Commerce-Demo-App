@@ -1,0 +1,23 @@
+<!--
+  ~ /*
+  ~  * Copyright (C)  2020  Shabinder Singh
+  ~  *
+  ~  * This program is free software: you can redistribute it and/or modify
+  ~  * it under the terms of the GNU General Public License as published by
+  ~  * the Free Software Foundation, either version 3 of the License, or
+  ~  * (at your option) any later version.
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful,
+  ~  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * You should have received a copy of the GNU General Public License
+  ~  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~  */
+  -->
+
+<vector android:height="28dp" android:viewportHeight="22.88"
+    android:viewportWidth="22.88" android:width="28dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#1E201D" android:pathData="M0.324,1.909c-0.429,-0.429 -0.429,-1.143 0,-1.587c0.444,-0.429 1.143,-0.429 1.587,0l9.523,9.539l9.539,-9.539c0.429,-0.429 1.143,-0.429 1.571,0c0.444,0.444 0.444,1.159 0,1.587l-9.523,9.524l9.523,9.539c0.444,0.429 0.444,1.143 0,1.587c-0.429,0.429 -1.143,0.429 -1.571,0l-9.539,-9.539l-9.523,9.539c-0.444,0.429 -1.143,0.429 -1.587,0c-0.429,-0.444 -0.429,-1.159 0,-1.587l9.523,-9.539L0.324,1.909z"/>
+</vector>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /*
+  ~  * Copyright (C)  2020  Shabinder Singh
+  ~  *
+  ~  * This program is free software: you can redistribute it and/or modify
+  ~  * it under the terms of the GNU General Public License as published by
+  ~  * the Free Software Foundation, either version 3 of the License, or
+  ~  * (at your option) any later version.
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful,
+  ~  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * You should have received a copy of the GNU General Public License
+  ~  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~  */
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+    <item
+        android:id="@+id/wallet"
+        android:enabled="true"
+        android:icon="@drawable/ic_wallet"
+        android:title="My Wallet"/>
+    <item
+        android:id="@+id/orders"
+        android:enabled="true"
+        android:icon="@drawable/ic_orders"
+        android:title="My Orders"/>
+    <item
+        android:id="@+id/offers"
+        android:enabled="true"
+        android:icon="@drawable/ic_offers"
+        android:title="Offers"/>
+    <item
+        android:id="@+id/refer"
+        android:enabled="true"
+        android:icon="@drawable/ic_refer"
+        android:title="Refer"/>
+    <item
+        android:id="@+id/logout"
+        android:enabled="true"
+        android:icon="@drawable/ic_logout"
+        android:title="LogOut"/>
+    <item
+        android:id="@+id/aboutUs"
+        android:enabled="true"
+        android:icon="@drawable/ic_about_us"
+        android:title="About Us"/>
+    <item
+        android:id="@+id/rate"
+        android:enabled="true"
+        android:icon="@drawable/ic_rate"
+        android:title="Rate Us"/>
+    <item
+        android:id="@+id/share"
+        android:enabled="true"
+        android:icon="@drawable/ic_share"
+        android:title="Share"/>
+    </group>
+    <group>
+        <item android:title="">
+
+        </item>
+    </group>
+</menu>

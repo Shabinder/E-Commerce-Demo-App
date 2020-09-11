@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (C)  2020  Shabinder Singh
+  ~  *
+  ~  * This program is free software: you can redistribute it and/or modify
+  ~  * it under the terms of the GNU General Public License as published by
+  ~  * the Free Software Foundation, either version 3 of the License, or
+  ~  * (at your option) any later version.
+  ~  *
+  ~  * This program is distributed in the hope that it will be useful,
+  ~  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  * GNU General Public License for more details.
+  ~  *
+  ~  * You should have received a copy of the GNU General Public License
+  ~  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~  */
+  -->
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/homeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightGrey"
+                tools:context=".fragments.home.HomeFragment">
+
+                <ImageView
+                    android:id="@+id/menu_button"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_menu"
+                    app:tint="@color/darkGrey" />
+
+                <TextView
+                    android:id="@+id/companyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Company"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/menu_button"
+                    app:layout_constraintStart_toEndOf="@+id/menu_button"
+                    app:layout_constraintTop_toTopOf="@+id/menu_button" />
+
+
+                <ImageView
+                    android:id="@+id/notification_button"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="12dp"
+                    android:onClick="notImplemented"
+                    app:layout_constraintBottom_toBottomOf="@+id/menu_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/menu_button"
+                    app:srcCompat="@drawable/ic_notification"
+                    app:tint="@color/darkGrey" />
+
+                <ImageView
+                    android:id="@+id/search_button"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="24dp"
+                    android:onClick="notImplemented"
+                    app:layout_constraintBottom_toBottomOf="@+id/notification_button"
+                    app:layout_constraintEnd_toStartOf="@+id/notification_button"
+                    app:layout_constraintTop_toTopOf="@+id/notification_button"
+                    app:srcCompat="@drawable/ic_search"
+                    app:tint="@color/darkGrey" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Discover"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/menu_button" />
+
+                <TextView
+                    android:id="@+id/seeAll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/text_background_accented"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:onClick="notImplemented"
+                    android:padding="8dp"
+                    android:text="See All"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/seeAll2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/text_background_accented"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="See All"
+                    android:textColor="@color/white"
+                    android:onClick="notImplemented"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/horizontal_circular_list"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/bannerCard1"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontal_circular_list">
+
+                    <ImageView
+                        android:id="@+id/banner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/bannerCard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/box1">
+
+                    <ImageView
+                        android:id="@+id/banner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Your Previous Order"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bannerCard1" />
+
+                <!--        Would Use Recycler View If Proper Functionality was to be Implemented-->
+                <!-- BOX1 -->
+                <LinearLayout
+                    android:id="@+id/box1"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/textView3"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/box2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                    <include
+                        android:id="@+id/previous_order1"
+                        layout="@layout/previous_item"
+                        />
+                </LinearLayout>
+
+                <!-- BOX1 -->
+                <LinearLayout
+                    android:id="@+id/box2"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/textView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/box1"
+                    app:layout_constraintTop_toTopOf="@+id/box1">
+
+                    <include
+                        android:id="@+id/previous_order2"
+                        layout="@layout/previous_item" />
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+</layout>
